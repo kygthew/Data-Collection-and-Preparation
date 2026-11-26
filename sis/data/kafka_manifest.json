@@ -1,0 +1,17 @@
+{
+  "run_id": "c1321fa9fb0c",
+  "topic": "stock_prices",
+  "attempted": 3763,
+  "published": 3763,
+  "failed": 0,
+  "serialization_errors": 0,
+  "test_records_sent": 3,
+  "delivery_errors_sample": [],
+  "broker": {
+    "bootstrap_servers": "localhost:9092",
+    "topic": "stock_prices",
+    "partitions": 3,
+    "broker_count": 1
+  },
+  "finished_at": "2026-11-25T17:49:12"
+}

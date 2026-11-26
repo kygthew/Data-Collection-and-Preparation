@@ -1,0 +1,104 @@
+{
+  "collect": {
+    "total_records": 3760,
+    "note": "reused existing raw_data.csv",
+    "updated_at": "2026-11-25T17:49:11"
+  },
+  "produce": {
+    "run_id": "c1321fa9fb0c",
+    "topic": "stock_prices",
+    "attempted": 3763,
+    "published": 3763,
+    "failed": 0,
+    "serialization_errors": 0,
+    "test_records_sent": 3,
+    "delivery_errors_sample": [],
+    "broker": {
+      "bootstrap_servers": "localhost:9092",
+      "topic": "stock_prices",
+      "partitions": 3,
+      "broker_count": 1
+    },
+    "finished_at": "2026-11-25T17:49:12",
+    "updated_at": "2026-11-25T17:49:12"
+  },
+  "consume": {
+    "run_id": "c1321fa9fb0c",
+    "topic": "stock_prices",
+    "expected": 3763,
+    "consumed": 3763,
+    "malformed": 0,
+    "skipped_from_other_runs": 0,
+    "kafka_errors": 0,
+    "stop_reason": "all expected messages consumed",
+    "broker": {
+      "bootstrap_servers": "localhost:9092",
+      "topic": "stock_prices",
+      "partitions": 3,
+      "broker_count": 1
+    },
+    "finished_at": "2026-11-25T17:49:16",
+    "updated_at": "2026-11-25T17:49:16"
+  },
+  "validate": {
+    "received": 3763,
+    "valid": 3760,
+    "invalid": 3,
+    "test_records": 3,
+    "test_records_detected": 3,
+    "invalid_real_records": 0,
+    "invalid_handling": "rejected records are quarantined in data/invalid_records.csv and excluded from cleaning",
+    "updated_at": "2026-11-25T17:49:16"
+  },
+  "clean": {
+    "input_rows": 3760,
+    "missing_before": {},
+    "missing_after": {},
+    "duplicates_removed": 0,
+    "filtered_out": 0,
+    "split_suspect_returns_nulled": 0,
+    "output_rows": 3760,
+    "high_activity_days": 87,
+    "pivot_shape": [
+      37,
+      6
+    ],
+    "updated_at": "2026-11-25T17:49:16"
+  },
+  "load": {
+    "processed_records": 3760,
+    "stored_records": 3760,
+    "first_load": {
+      "rows_processed": 3760,
+      "rows_before": 0,
+      "rows_after": 3760,
+      "inserted": 3760,
+      "updated": 0,
+      "checksum": "3dfa0ea651738b67189345928a1219882a8c3ff2fa3a944b226f9c4031f25d7f"
+    },
+    "second_load": {
+      "rows_processed": 3760,
+      "rows_before": 3760,
+      "rows_after": 3760,
+      "inserted": 0,
+      "updated": 0,
+      "checksum": "3dfa0ea651738b67189345928a1219882a8c3ff2fa3a944b226f9c4031f25d7f"
+    },
+    "duplicate_keys": 0,
+    "idempotent": true,
+    "db_path": "/Users/aigerim/Documents/Data Collection and Preparation/SIS2/project/data/output.db",
+    "updated_at": "2026-11-25T17:49:17"
+  },
+  "analysis": {
+    "rows_analysed": 3760,
+    "figures": [
+      "fig1_volume_vs_range_scatter.png",
+      "fig2_correlation_by_stock.png",
+      "fig3_volatility_by_volume_quintile.png",
+      "fig4_timeseries_volume_vs_volatility.png",
+      "fig5_lead_lag_heatmap.png"
+    ],
+    "findings_file": "docs/eda_findings.md",
+    "updated_at": "2026-11-25T17:49:19"
+  }
+}

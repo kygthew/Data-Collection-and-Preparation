@@ -1,0 +1,4 @@
+symbol,date,open,high,low,close,volume,change,changePercent,vwap,is_test_record,errors
+MSFT,2099-01-05,200.0,190.0,210.0,200.0,5000000,0.0,0.0,100.0,True,R4 invalid or future date | R6 high < low | R6 high below open/close | R6 low above open/close
+FAKE,not-a-date,10.0,12.0,9.0,,1000,0.0,0.0,100.0,True,R2 missing value in 'close' | R3 symbol not in allowed list | R4 invalid or future date
+AAPL,2099-01-04,100.0,105.0,95.0,-50.0,-1000,0.0,0.0,100.0,True,R4 invalid or future date | R5 close must be > 0 | R5 volume must be >= 0 | R6 low above open/close
